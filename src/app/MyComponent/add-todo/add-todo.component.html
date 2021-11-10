@@ -1,0 +1,19 @@
+<div class="my-3">
+    <h4>Add New Todo</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="Text" name="title" class="form-control" id="title" [(ngModel)]="title">
+        </div>
+        <div class="form-group">
+            <label for="desc">Descriptions</label>
+            <input type="Text" name="desc" class="form-control" id="desc" [(ngModel)]="desc">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" name="active" id="active" [(ngModel)]="active">
+            <label class="form-check-label" for="active'">Active Enable</label>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+    </form>
+</div>
+<br>
